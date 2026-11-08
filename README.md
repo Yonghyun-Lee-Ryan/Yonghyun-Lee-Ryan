@@ -117,7 +117,7 @@ contact:   yonghyunlee.me@gmail.com
 ## 🎞️ Projects
 
 <a href="https://www.heaven-letter.app">
-  <img src="static/project-banner-heaven-letter.jpg" alt="Letters from Heaven — a comforting letter from your far-future self" width="100%" />
+  <img src="https://www.heaven-letter.app/opengraph-image" alt="Letters from Heaven" width="100%" />
 </a>
 
 ### 1. Letters from Heaven (천국에서 온 편지) · <a href="https://www.heaven-letter.app">heaven-letter.app</a>
