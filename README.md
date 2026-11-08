@@ -57,11 +57,14 @@ contact:   yonghyunlee.me@gmail.com
     <td align="right"><b>AI / ML</b></td>
     <td>
       <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" />
+      <img src="https://img.shields.io/badge/Claude%20API-D97757?style=flat-square&logo=anthropic&logoColor=white" />
     </td>
   </tr>
   <tr>
     <td align="right"><b>Frameworks</b></td>
     <td>
+      <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
+      <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
       <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" />
       <img src="https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white" />
       <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white" />
@@ -72,6 +75,14 @@ contact:   yonghyunlee.me@gmail.com
     <td align="right"><b>Database</b></td>
     <td>
       <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
+      <img src="https://img.shields.io/badge/Redis%20(Upstash)-DC382D?style=flat-square&logo=redis&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td align="right"><b>Cloud</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" />
+      <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" />
     </td>
   </tr>
   <tr>
@@ -105,9 +116,56 @@ contact:   yonghyunlee.me@gmail.com
 
 ## 🎞️ Projects
 
+<a href="https://www.heaven-letter.app">
+  <img src="static/project-banner-heaven-letter.jpg" alt="Letters from Heaven — a comforting letter from your far-future self" width="100%" />
+</a>
+
+### 1. Letters from Heaven (천국에서 온 편지) · <a href="https://www.heaven-letter.app">heaven-letter.app</a>
+
+> A comforting letter from your far-future self, written by AI from your birth chart (Saju) — delivered as 3–4 images in about 20 seconds.
+
+A live consumer web service I designed, built and operate solo. Users enter a nickname and birth date/time; the service calculates their Four Pillars of Destiny (Saju) and asks Claude to write a letter from *the self who has lived a full life* to *the self who is struggling today*, then renders it onto illustrated letter paper. It is a creative piece inspired by Saju — it never predicts real lifespan or health — and it is designed with safety in mind: peaceful depictions only, a banned-expression filter, a softer "cheer letter" for minors, and crisis-hotline guidance.
+
+<p>
+  <img src="https://img.shields.io/badge/Status-Live-2EA44F?style=flat-square" />
+  <img src="https://img.shields.io/badge/Launched-Oct%202026-189AB4?style=flat-square" />
+  <img src="https://img.shields.io/badge/Languages-Korean%20%7C%20Japanese-05445E?style=flat-square" />
+</p>
+
+**📈 KPIs** &nbsp;<sub>first month · Oct 10 – Nov 6, 2026 · Google Analytics 4 & server logs</sub>
+
+| Metric | Value |
+| :--- | :--- |
+| Monthly active users | **2.4K** (2.4K new users) |
+| Letters written & delivered | **~2,200** in 30 days |
+| Avg. engagement time per user | **1 min 57 s** |
+| Events tracked | **32K** |
+| Acquisition | **~75%** of new users from Google organic search (1.8K) — no paid ads |
+| AI cost per letter | **≈ ₩18 (~$0.013)** on Claude Sonnet |
+| Markets | Korea → **Japan** (Japanese version launched Nov 2026) |
+
+**What I built**
+
+- **Saju engine from scratch** — solar terms via astronomical calculation, historical Korean & Japanese time-zone/DST tables, local-mean-time correction, 10-year luck cycles (대운)
+- **LLM pipeline** — Claude API with structured JSON output, server-side model fallback, per-language prompts (KO/JA), safety filter with retry and a template fallback, token/cost tracking per day
+- **Image rendering** — letters rendered server-side to JPG (satori + sharp) with custom glyph-measured line breaking, including Japanese kinsoku rules
+- **Growth & retention** — Kakao/LINE/Instagram Story sharing, an on-device "letter box" (IndexedDB), a time capsule that emails your reply back after 100 days or a year (AES-256-GCM, cron)
+- **Operations** — Cloudflare Turnstile, IP-hash + global daily quotas, Upstash Redis, GA4 funnel events, AdSense, SEO (JSON-LD, hreflang), GitHub Actions CI, Vercel
+
+**Role** &nbsp;`Solo Founder` &nbsp;`Product & UX Design` &nbsp;`Full-stack Developer` &nbsp;`LLM Prompt Engineering` &nbsp;`Growth & Marketing`
+
+<img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
+<img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
+<img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" />
+<img src="https://img.shields.io/badge/Claude%20API-D97757?style=flat-square&logo=anthropic&logoColor=white" />
+<img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" />
+<img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" />
+
+<br/>
+
 <img src="static/project-banner-1.jpg" alt="Home upper-limb rehabilitation device" width="100%" />
 
-### 1. AI-Assisted Home Upper-Limb Rehabilitation Device
+### 2. AI-Assisted Home Upper-Limb Rehabilitation Device
 
 > Trajectory collection and AI-based posture voice feedback for at-home rehabilitation exercises.
 
@@ -124,7 +182,7 @@ To mitigate regional imbalances in medical infrastructure, we developed a home-b
 
 <img src="static/project-banner-2.jpg" alt="LSH-based video snapshot retrieval" width="100%" />
 
-### 2. Video Snapshot Retrieval with LSH-based FALCONN
+### 3. Video Snapshot Retrieval with LSH-based FALCONN
 
 > Fast nearest neighbor search over large-scale video data.
 
@@ -138,7 +196,7 @@ Reviewed research papers on **Locality-Sensitive Hashing** and developed a featu
 
 <img src="static/project-banner-3.jpg" alt="AI medical chatbot solution" width="100%" />
 
-### 3. AI Medical Chatbot with LLM & Tabular Classification
+### 4. AI Medical Chatbot with LLM & Tabular Classification
 
 > Supplement recommendation from clinical diagnostic data through a conversational interface.
 
